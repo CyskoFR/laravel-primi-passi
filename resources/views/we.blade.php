@@ -56,6 +56,22 @@
                 -webkit-text-fill-color: transparent;
             }
 
+            a {
+                margin: 10px;
+                border: 1px solid grey;
+                padding: 6px 12px;
+                border-radius: 8px;
+                text-decoration: none;
+                color: black;
+                font-size: 18px;
+                font-weight: 600;
+            }
+
+            a:hover {
+                background: -webkit-linear-gradient(45deg, blue, red);
+                color: white;
+            }
+
         </style>
     </head>
 
@@ -63,15 +79,23 @@
         <div class="flex-center position-ref full-height">
 
             <div class="content">
-                <div class="title m-b-md">
+
+                <h1 class="title m-b-md">
                     We!
-                </div>
-                <h2>
-                    I did it!
-                </h2>
+                </h1>
+
+                <a href="{{ url('/page2') }}">
+                    Page 2
+                </a>
+
+                <a href="{{ url('/random-pics') }}">
+                    Random pics
+                </a>
+
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum sint porro incidunt nemo, debitis necessitatibus adipisci aliquid veniam laboriosam nulla quos quae, error iure asperiores provident rerum voluptas accusantium pariatur!
                 </p>
+                
             </div>
             
         </div>

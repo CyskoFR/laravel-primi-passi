@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
     return view('we');
+});
+
+Route::get('/page2', function () {
+    return view('page2');
+});
+
+Route::get('/random-pics', function () {
+    return view('randomPic');
 });
